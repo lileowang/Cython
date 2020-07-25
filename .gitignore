@@ -1,5 +1,6 @@
 # Environments
 .venv
+.vscode
 
 # Build
 build/
