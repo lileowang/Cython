@@ -1,10 +1,14 @@
-cpdef getprod_cy(digits, n = 3):
+
+cpdef getprod_cy(int[:] digits, unsigned int n):
+    cdef unsigned int i, j, m, digit
+    cdef unsigned long long best, product
     best = 0
     m = len(digits)
     for i in range(m - n + 1):
         product = 1
         for j in range(n):
-            product *= digits[i + j]
+            digit = digits[i + j]
+            product *= digit
         if product > best:
             best = product
     return best
