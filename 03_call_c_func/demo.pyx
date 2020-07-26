@@ -1,4 +1,5 @@
 from libc.stdlib cimport atoi
+from libc.math cimport sin
 from cpython.version cimport PY_VERSION_HEX
 
 cpdef parse_charptr_to_py_int(char* s):
@@ -8,6 +9,9 @@ cpdef parse_charptr_to_py_int(char* s):
 
     assert s is not NULL, 'byte string value is NULL'
     return atoi(s)
+
+cpdef get_sin(double x):
+    return sin(x)
 
 cpdef get_python_version():
     return PY_VERSION_HEX
