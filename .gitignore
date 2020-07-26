@@ -4,5 +4,7 @@
 
 # Build
 build/
+__pycache__/
 *.c
+*.html
 *.pyd
