@@ -1,5 +1,13 @@
-// CppApp.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/// Author:     Li Leo Wang
+/// Date:       2020-07-29
+/// Description:
+/// - Test c code to be used by Cython.
+/// 
+/// Notes:
+/// - Project > properties > C/C++ > precompiled header:
+///     not using
+/// 
+
 
 //#include "pch.h"
 #include <iostream>
