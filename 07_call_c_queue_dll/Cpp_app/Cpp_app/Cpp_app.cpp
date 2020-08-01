@@ -3,9 +3,25 @@
 
 //#include "pch.h"
 #include <iostream>
+#include "queue.h"
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n"; 
+    Queue * q = queue_new();
+
+    queue_push_tail(q, (QueueValue)10);
+    queue_push_tail(q, (QueueValue)20);
+
+    cout << "peek head: " << (int)queue_peek_head(q) << endl;
+    cout << "pop head: " << (int)queue_pop_head(q) << endl;
+    cout << "pop head: " << (int)queue_pop_head(q) << endl;
+    cout << "pop head: " << (int)queue_pop_head(q) << endl;
+
+    if (q != NULL)
+    {
+        queue_free(q);
+    }
 }
 
