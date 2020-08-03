@@ -2,6 +2,8 @@ import pstats, cProfile
 
 from calc_pi import approx_pi
 
+# print(f'pi = {approx_pi()}')
+
 statement = 'approx_pi()'
 output = 'profile.prof'
 cProfile.runctx(statement, globals(), locals(), output)
